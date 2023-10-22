@@ -1,14 +1,14 @@
-const int Pot_Pin_R = A0; // Potentiometer Red
-const int Pot_Pin_G = A1; // Potentiometer Green
-const int Pot_Pin_B = A2; // Potentiometer Blue
+const int Pin_R = A0; // Input Red
+const int Pin_G = A1; // Input Green
+const int Pin_B = A2; // Input Blue
 
-int PotR_Value = 0; //Potentiometer Red Value
-int PotG_Value = 0; //Potentiometer Green Value
-int PotB_Value = 0; //Potentiometer Blue Value
+int In_R_Value = 0; //Input Red Value
+int In_G_Value = 0; //Input Green Value
+int In_B_Value = 0; //Input Blue Value
 
-int Red_Value = 0; //Red Value
-int Green_Value = 0; //Green Value
-int Blue_Value = 0; //Blue Value
+int Out_R_Value = 0; //Output Red Value
+int Out_G_Value = 0; //Output Green Value
+int Out_B_Value = 0; //Output Blue Value
 
 const int LEDRed_Pin = 9; // Pin Output Red
 const int LEDGreen_Pin = 10; // Pin Output Green
@@ -16,9 +16,9 @@ const int LEDBlue_Pin = 11; // Pin Output Blue
 
 
 void setup() {
-  pinMode(Pot_Pin_R, INPUT);
-  pinMode(Pot_Pin_G, INPUT);
-  pinMode(Pot_Pin_B, INPUT);
+  pinMode(Pin_R, INPUT);
+  pinMode(Pin_G, INPUT);
+  pinMode(Pin_B, INPUT);
 
   pinMode(LEDRed_Pin, OUTPUT);
   pinMode(LEDGreen_Pin, OUTPUT);
@@ -29,18 +29,18 @@ void setup() {
 
 void loop() {
   // Read analog input of potentiometers into the variables PotR, PotG, PotB
-  PotR_Value = analogRead(Pot_Pin_R);
-  PotG_Value = analogRead(Pot_Pin_G);
-  PotB_Value = analogRead(Pot_Pin_B);
+  In_R_Value = analogRead(Pin_R);
+  In_G_Value = analogRead(Pin_G);
+  In_B_Value = analogRead(Pin_B);
 
   // Map to LED scale (0-1023 to 0-255)
-  Red_Value = map(PotR_Value, 0, 1023, 0, 255);
-  Green_Value = map(PotG_Value, 0, 1023, 0, 255);
-  Blue_Value = map(PotB_Value, 0, 1023, 0, 255);
+  Out_R_Value = map(In_R_Value, 0, 1023, 0, 255);
+  Out_G_Value = map(In_G_Value, 0, 1023, 0, 255);
+  Out_B_Value = map(In_B_Value, 0, 1023, 0, 255);
 
   // Lighten up
-  analogWrite(LEDRed_Pin, Red_Value);
-  analogWrite(LEDGreen_Pin, Green_Value);
-  analogWrite(LEDBlue_Pin, Blue_Value);
+  analogWrite(LEDRed_Pin, Out_R_Value);
+  analogWrite(LEDGreen_Pin, Out_G_Value);
+  analogWrite(LEDBlue_Pin, Out_B_Value);
   
 }
