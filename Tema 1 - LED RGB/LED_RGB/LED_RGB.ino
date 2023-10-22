@@ -28,7 +28,7 @@ void setup() {
 
 
 void loop() {
-  // Read analog input of potentiometers into the variables PotR, PotG, PotB
+  // Read analog input into variables PotR, PotG, PotB
   In_R_Value = analogRead(Pin_R);
   In_G_Value = analogRead(Pin_G);
   In_B_Value = analogRead(Pin_B);
