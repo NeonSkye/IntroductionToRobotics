@@ -13,7 +13,7 @@ Astfel, am citit valorile potentiometrelor prin pinii analog input ale placii Ar
 
 Pentru a transmite valorile fara erori, am folosit functia map()[^1] care mapeaza valorile de la o scara de numere la alta. Valorile rezultate au fost transmise prin pin-urile de output digitale catre cei 3 anozi ai LED-ului RGB. 
 
-[^1]: Deoarece potentiometrul transmite valori intre 0-1023 si LED-ul primeste valori intre 0-255 este necesara functia map().
+[^1]: De ce map()? Deoarece potentiometrul transmite valori intre 0-1023 si LED-ul primeste valori intre 0-255.
 
 Circuit:
 ![Circuit_LedRGB](https://github.com/NeonSkye/IntroductionToRobotics/assets/92863316/86430edf-ceab-4fd0-810c-a7102a784734)
