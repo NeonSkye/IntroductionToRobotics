@@ -41,6 +41,7 @@ const long interval = 3000;
 const long State_Interval = 150;
 const long Ring_Interval = 150;
 const long Note_Duration = 150;
+const long Door_Interval = 500;
 unsigned long prevRingMillis;
 
 unsigned int lastDebounceTime_BTN1 = 0;
@@ -158,7 +159,7 @@ if (floorPointer == floorTarget)
 
       tone(ElevatorBuzzPin, Door_Sound[doorNote], Note_Duration);
      
-      if((currentMillis - prevRingMillis) >= 500) {
+      if((currentMillis - prevRingMillis) >= Door_Interval) {
         doorNote++;
         prevRingMillis = currentMillis;
       
