@@ -21,5 +21,20 @@ Circuit:
 Demonstratie Video: 
 https://www.youtube.com/watch?v=NCqM70rUhiY
 
-### Tema 2
-(TBA)
+### Elevator Wannabe
+Pentru a doua tema de laborator am avut de realizat simularea unui lift prin intermediul a 4 LED-uri,  3 butoane si un buzzer.
+
+3 LED-uri sunt necesare pentru a indica unde este liftul,  un LED este folosit pentru indicatorul de operare al liftului, iar buzzer-ul reda sunetul liftului (se inchid usile, liftul e in miscare, liftul a ajuns la destinatie). Am folosit un array care contine state-ul LED-urilor de etaj. Pentru a simula unde a fost chemat liftul, am folosit un floorTarget. De asemenea, pentru a decide ce LED-uri se aprind (in ce directie se misca liftul) am folosit doua functii if, care verifica daca etajul destinatie este mai mare sau mai mic ca etajul curent. Astfel, am reusit sa fac ca LED-urile intermediare sa se aprinda, indicand unde s-ar afla liftul.
+
+Cat timp liftul este in miscare, LED-ul de stare palpaie, iar cand liftul se afla la un etaj, LED-ul de stare ramane aprins.
+
+Pentru "soundtrack-ul" liftului, am 3 array-uri de note muzicale, note obtinute din header-ul "pitches.h". 
+
+Butoanele liftului au debounce implementat in cod. 
+
+Circuit:
+![20231029_192857](https://github.com/NeonSkye/IntroductionToRobotics/assets/92863316/0b8211b7-6b87-48d6-b64d-bad13e051c8d)
+
+Demonstratie Video:
+https://www.youtube.com/watch?v=provyeFycSM
+
