@@ -38,3 +38,16 @@ Circuit:
 Demonstratie Video:
 https://www.youtube.com/watch?v=provyeFycSM
 
+### Stopwatch Timer
+Pentru a patra tema de laborator am avut de realizat un cronometru simplu, cu functionalitate de start/pause, reset, si lap. 
+
+Am folosit un 7-segment 4 digit display pentru afisarea timpului, un shift register pentru scriere, si 3 butoane pentru a controla cronometrul. Pentru scrierea si afisarea timpului m-am folosit de mai multe functii in cod, precum writeReg si writeNumber. Am scris
+encoding-ul in biti, pentru a-i transmite segmentelor individuale prin intermediul shift register-ului. Pentru functionalitatea de lap pur si simplu am un vector de 4 elemente in care salvez timpul in momentul apasarii butonului de lap. Atunci cand cronometrul este in starea initiala/dupa reset (adica este afisat 000.0), atunci apasarea butonului de lap va trece prin acest vector si va afisa timpii salvati. 
+
+Apasarea butonului lap salveaza timpul doar daca cronometrul nu este in pauza. Apasarea butonului de reset reseteaza cronometrul doar daca acesta este in pauza.
+
+Circuit: 
+![20231112_193314](https://github.com/NeonSkye/IntroductionToRobotics/assets/92863316/0755aba4-46c2-487f-ba5a-f294536fd7d0)
+
+Demonstratie Video:
+https://www.youtube.com/watch?v=ymOH9y6Fu_A
