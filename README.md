@@ -55,7 +55,7 @@ https://www.youtube.com/watch?v=ymOH9y6Fu_A
 ### Mini Matrix Game
 Pentu realizarea acestei teme am avut de realizat un mini joc pe matrice. Aceasta tema este prima etapa in proiectul in sine.
 
-Pentru a indeplini sarcinile necesare, am folosit un matrix display (+ matrix display driver) si un joystick + buton pentru controlul jocului. Jocul momentan consta intr-un punct (jucatorul) care se poate deplasa pe harta. Atunci cand acesta vine in contact cu un perete, peretele va disparea. Joystick-ul este folosit pentru a controla jucatorul. Butonul o sa fie folosit pentru a plasa bombe care o sa se miste in ultima directie in care s-a miscat jucatorul. Momentan bombele nu se pot misca, pe harta fiind doar o singura bomba statica pentru a demonstra blink-ul diferit fata de jucator. LED-ul ce indica pozitia jucatorului are un blink mai rapid decat bomba.
+Pentru a indeplini sarcinile necesare, am folosit un matrix display (+ matrix display driver) si un joystick + buton pentru controlul jocului. Jocul momentan consta intr-un punct (jucatorul) care se poate deplasa pe harta. Atunci cand acesta vine in contact cu un perete, peretele va disparea. Joystick-ul este folosit pentru a controla jucatorul. Butonul o sa fie folosit pentru a plasa bombe care o sa se miste in ultima directie in care s-a miscat jucatorul. Momentan bombele nu se pot misca, pe harta fiind doar o singura bomba statica pentru a demonstra blink-ul diferit fata de jucator. LED-ul ce indica pozitia jucatorului are un blink mai incet decat bomba.
 
 Circuit:
 ![image](https://github.com/NeonSkye/IntroductionToRobotics/assets/92863316/3fedffa4-0a76-4757-b9b6-ea0860e95fa8)
