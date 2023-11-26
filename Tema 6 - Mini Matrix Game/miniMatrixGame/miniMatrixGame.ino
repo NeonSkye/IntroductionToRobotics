@@ -22,12 +22,12 @@ byte matrix[matrixSize][matrixSize] = {
 };
 
 // Used for blinking the player;
-unsigned long int playerBlinkDelay = 70;
+unsigned long int playerBlinkDelay = 450;
 unsigned long int startPlayerBlink = 0;
 unsigned long int statePlayerBlink = 0;
  
 
-unsigned long int bombBlinkDelay = 500;
+unsigned long int bombBlinkDelay = 70;
 unsigned long int startBombBlink = 0;
 unsigned long int stateBombBlink = 0;
 bool bombPlaced = false;
